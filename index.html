@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Product list with cart</title>
+</head>
+<body>
+  <h1>Desserts</h1>
+  <div class="body">
+  <div class="mainSection">
+    <div class="food">
+      <div class="listCart"></div>
+    </div>
+    <div class="cart">
+      <h1>Your Cart <span class="quantity">(0)</span></h1>
+      <div class="cartList">
+      <div class="cartItem"></div>
+    </div>
+      <div class="subSection">
+        <img src="assets/images/illustration-empty-cart.svg">
+        <p class="paraO">Your added items will appear here</p>
+      </div>
+      <div class="subSectionT">
+        <div id="div">
+        <p><img src="assets/images/icon-carbon-neutral.svg">This is a <b>Carbon-neutral</b> delivery</p>
+      </div>
+        <div class="totalO">
+          <p>Order</p>
+          <b class="total"></b>
+        </div>
+        <button class="button">Confirm Order</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="orderConfirm">
+    <div class="orders">
+      <img src="assets/images/icon-order-confirmed.svg">
+      <h1>Order Confirmed</h1>
+      <p>We hope you enjoy your food</p>
+    </div>
+    <div class="subBack">
+      <div class="orderList">
+        <div class="orderItem"></div>
+      </div>
+      <div class="orderTotal">
+        <p>Order Total</p>
+        <b id="orderTotal"></b>
+      </div>
+    </div>
+    <button class="reset" onclick="reStart()">Start New Order</button>
+  </div>
+<script src="main.js"></script>
+</body>
+</html>
